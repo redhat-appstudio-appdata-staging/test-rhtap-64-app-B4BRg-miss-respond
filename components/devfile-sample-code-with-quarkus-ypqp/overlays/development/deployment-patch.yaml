@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-code-with-quarkus-ypqp
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/test-rhtap-64-tenant/test-rhtap-64-app/devfile-sample-code-with-quarkus-ypqp@sha256:2569d1402aba3e9505a41e67134e0f180a30f03ef3afa857ceafe497dcd1ee24
+        name: my-java-quarkus
+        resources: {}
+status: {}
